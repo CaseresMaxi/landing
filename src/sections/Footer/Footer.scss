@@ -1,0 +1,27 @@
+.footer-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    padding: 30px;
+    color: white;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.678);
+    margin-top: 40px;
+    border-top: 1px solid pink;
+
+    img {
+        height: 100px;
+    }
+}
+
+.reserved {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    h1 {
+        position: relative;
+        top: -20px;
+    }
+}

@@ -7,7 +7,7 @@ const Proyect = (props: { title: string; body: string; img: string; tecnologis?:
 
     return (
         <>
-            <div className="proyect-wrapper">
+            <article className="proyect-wrapper">
 
                 <div className="desctiption-continer">
                     <h1>{props.title}</h1>
@@ -20,7 +20,7 @@ const Proyect = (props: { title: string; body: string; img: string; tecnologis?:
                 <img src={props.img} alt="" />
 
 
-            </div>
+            </article>
         </>
     )
 }

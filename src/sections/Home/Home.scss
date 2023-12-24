@@ -2,9 +2,29 @@
     // background-color: black;
 
     h1 {
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
         color: white;
         font-size: 70px;
         font-weight: 700;
+        display: block;
+        white-space: nowrap;
+        border-right: 4px solid pink;
+        width: 20ch;
+        animation: typing 3s steps(20),
+        blink,
+        5s infinite step-end alternate;
+        overflow: hidden;
 
         span {
             color: pink;
@@ -15,6 +35,7 @@
         color: white;
         font-size: 30px;
         font-weight: 500;
+
         span {
             color: pink;
             font-weight: 700;
@@ -26,6 +47,7 @@
         font-size: 18px;
         font-weight: 400;
         margin-top: 8px;
+
         span {
             color: pink;
             font-weight: 700;

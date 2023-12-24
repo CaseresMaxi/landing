@@ -1,0 +1,23 @@
+.contact-section-wrapper {
+
+    font-size: 20px;
+
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 10px;
+        height: 70px;
+
+    }
+
+    li {
+        color: pink;
+        font-size: 18px;
+        margin-left: 10px;
+
+    }
+}
