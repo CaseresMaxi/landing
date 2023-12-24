@@ -1,0 +1,80 @@
+.about-containre {
+    width: 70%;
+    height: max(60%, 550px);
+    border: 1px solid rgba(128, 128, 128, 0.404);
+    border-radius: 10px;
+    display: flex;
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    .about-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 8px;
+        justify-content: center;
+    }
+
+    .skills-cotnainer {
+        width: 50%;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        h1 {
+            color: pink;
+            font-size: 60px;
+        }
+
+        .logos-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 16px;
+        }
+    }
+}
+
+.about-logo {
+    width: 120px;
+}
+
+.about-tile-conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    h1 {
+        color: pink;
+        font-size: 60px;
+    }
+
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+
+}
+
+.about-content-container {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

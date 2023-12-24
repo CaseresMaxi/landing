@@ -1,0 +1,11 @@
+.logo-wrapper {
+    img {
+        width: 65px;
+        transition: width 0.5s ease;
+    }
+    img:hover{
+        width: 75px;
+        transition: width 0.2s ease;
+    }
+
+}

@@ -1,0 +1,48 @@
+.home-section-wrapper {
+    // background-color: black;
+
+    h1 {
+        color: white;
+        font-size: 70px;
+        font-weight: 700;
+
+        span {
+            color: pink;
+        }
+    }
+
+    h2 {
+        color: white;
+        font-size: 30px;
+        font-weight: 500;
+        span {
+            color: pink;
+            font-weight: 700;
+        }
+    }
+
+    h3 {
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 8px;
+        span {
+            color: pink;
+            font-weight: 700;
+        }
+    }
+
+
+
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content-container {
+    max-width: 80%;
+    padding: 80px;
+}

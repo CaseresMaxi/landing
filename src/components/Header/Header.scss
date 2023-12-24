@@ -1,0 +1,29 @@
+.header-wrapper {
+    position: fixed;
+    width: 100%;
+
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+
+        display: flex;
+        height: 50px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        padding-right: 30px;
+    }
+
+    li {
+        float: right;
+        color: white;
+
+        button {
+            border: 2px solid pink;
+            background: none;
+            color: pink;
+            padding: 8px;
+            border-radius: 8px;
+        }
+    }
+}
