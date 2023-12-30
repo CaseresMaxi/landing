@@ -1,5 +1,9 @@
 .home-section-wrapper {
+
     // background-color: black;
+    img {
+        height: 800px;
+    }
 
     h1 {
         @keyframes typing {
@@ -22,8 +26,7 @@
         border-right: 4px solid pink;
         width: 20ch;
         animation: typing 3s steps(20),
-        blink,
-        5s infinite step-end alternate;
+        blink .5s infinite step-end alternate;
         overflow: hidden;
 
         span {

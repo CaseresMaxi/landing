@@ -60,7 +60,36 @@
         font-size: 60px;
     }
 
+
+
 }
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 300ms ease-in both;
+	        animation: scale-up-center 300ms ease-in both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
 
 .about-wrapper {
     display: flex;
@@ -78,8 +107,10 @@
     flex-direction: column;
     gap: 10px;
     font-size: 18px;
+
     span {
         color: pink;
         font-size: 20px;
     }
 }
+

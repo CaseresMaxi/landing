@@ -25,4 +25,6 @@ const Proyect = (props: { title: string; body: string; img: string; tecnologis?:
     )
 }
 
+
+
 export default Proyect

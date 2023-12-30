@@ -9,7 +9,7 @@ const Header = () => {
                 <ul>
                     <li>Sobre mi</li>
                     <li>LinkedIn</li>
-                    <li><button>Mi CV</button></li>
+                    <li><a href="https://drive.google.com/uc?export=download&id=1sjxdZytVZ3sySIuBIZayKzbkZjuZtPEe&cv.pdf">Mi CV</a></li>
                 </ul>
             </div>
         </>

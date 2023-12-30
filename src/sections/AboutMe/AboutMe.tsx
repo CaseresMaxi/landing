@@ -16,18 +16,64 @@ import node from "../../assets/node.png"
 import js from "../../assets/js.png"
 import python from "../../assets/python.png"
 import java from "../../assets/java.svg"
+import { useEffect, useRef, useState } from "react"
 
 
 const AboutMe = () => {
+    const aboutRef = useRef();
+    const [hasAppeared, setHasAppeared] = useState(false);
 
+    useEffect(() => {
+        const options = {
+            root: null, // use the viewport as the root
+            rootMargin: "0px", // no margin
+            threshold: 0.5, // 50% of the element must be visible
+        };
+
+        const handleIntersection = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && !hasAppeared) {
+                    // Ejecutar la función cuando el componente aparece en pantalla
+                    handleOnAppear();
+                    // Actualizar el estado para evitar que la función se ejecute repetidamente
+                    setHasAppeared(true);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(handleIntersection, options);
+        if (aboutRef.current) {
+            observer.observe(aboutRef.current);
+        }
+
+        // Limpiar el observer cuando el componente se desmonta
+        return () => {
+            observer.disconnect();
+        };
+    }, [aboutRef, hasAppeared]);
+
+    const handleOnAppear = () => {
+        const childrenArray = Array.from(aboutRef.current.children);
+
+        childrenArray.map((child, i) => {
+            setTimeout(() => {
+                console.log("pepe")
+                child.classList.add("scale-up-center");
+
+            }, 100 * i);
+        })
+
+
+
+    };
 
     return (
         <>
-            <article className="about-wrapper">
+            <article className="about-wrapper" >
                 <div className="about-containre">
                     <div className="about-content">
                         <div className="about-tile-conatiner">
-                            <h1>Sobre mi</h1>
+                            <h1 >Sobre mi</h1>
                             <img className="about-logo" src={carpi2}>
                             </img>
                         </div>
@@ -40,7 +86,7 @@ const AboutMe = () => {
                     </div>
                     <div className="skills-cotnainer">
                         <h1>Skills</h1>
-                        <div className="logos-container">
+                        <div className="logos-container" ref={aboutRef}>
                             <Logo url={react}></Logo>
                             <Logo url={angular}></Logo>
                             <Logo url={typescript}></Logo>

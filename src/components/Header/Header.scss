@@ -18,12 +18,13 @@
         float: right;
         color: white;
 
-        button {
+        a {
             border: 2px solid pink;
             background: none;
             color: pink;
             padding: 8px;
             border-radius: 8px;
+            text-decoration: none;
         }
     }
 }
