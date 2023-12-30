@@ -3,7 +3,91 @@
 body {
     font-family: 'Rubik', sans-serif;
     background-image: url("./assets/background.jpg");
+
+
+    height: 100vh;
+    /* background: linear-gradient(90deg, pink, #2e7a6373); */
+
+
+
+
+
+    /* background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, rgb(75, 75, 75) 0%, rgb(75, 75, 75)  25%, rgb(75, 75, 75)  51%, pink 100%);
+    -webkit-animation: AnimateBG 10s ease infinite;
+    animation: AnimateBG 10s ease infinite;
 }
+
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    } */
+}
+
+.slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 0%;
+    top: 17%;
+    width: 55%;
+    height: 630px;
+    background: rgba(0, 0, 0, 0.116);
+    border: 1.5px solid rgba(128, 128, 128, 0.151);
+    backdrop-filter: blur(10px);
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+    box-shadow: 5px 5px 30px 1px rgba(255, 192, 203, 0.171);
+}
+
+@keyframes sliderShape {
+
+    0%,
+    100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    34% {
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+}
+
 
 * {
     padding: 0;

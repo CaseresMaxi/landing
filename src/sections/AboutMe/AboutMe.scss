@@ -1,9 +1,16 @@
 .about-containre {
     width: 70%;
     height: max(60%, 550px);
-    border: 1px solid rgba(128, 128, 128, 0.404);
+    backdrop-filter: blur(80px);
+    border: 1px solid rgba(128, 128, 128, 0.151);
+    background-color: rgba(0, 0, 0, 0.116);
     border-radius: 10px;
     display: flex;
+
+    box-shadow: unset;
+    transition: box-shadow ease 0.2s;
+
+
 
     h1 {
         color: white;
@@ -45,6 +52,12 @@
     }
 }
 
+.about-containre:hover {
+    box-shadow: 5px 5px 30px 1px rgba(255, 192, 203, 0.171);
+    transition: box-shadow ease 0.2s;
+
+}
+
 .about-logo {
     width: 120px;
 }
@@ -65,31 +78,40 @@
 }
 
 .scale-up-center {
-	-webkit-animation: scale-up-center 300ms ease-in both;
-	        animation: scale-up-center 300ms ease-in both;
+    -webkit-animation: scale-up-center 300ms ease-in both;
+    animation: scale-up-center 300ms ease-in both;
 }
 
- @-webkit-keyframes scale-up-center {
+@-webkit-keyframes scale-up-center {
     0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
     }
-  }
-  @keyframes scale-up-center {
+}
+
+@keyframes scale-up-center {
     0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+
     }
-  }
-  
+}
+
 
 .about-wrapper {
     display: flex;
@@ -113,4 +135,3 @@
         font-size: 20px;
     }
 }
-
