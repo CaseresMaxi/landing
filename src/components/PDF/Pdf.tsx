@@ -1,5 +1,5 @@
 
-import { Document, Text, Page, StyleSheet, Image } from "@react-pdf/renderer"
+import { Document, Page, Text } from "@react-pdf/renderer"
 import "./PDF.scss"
 
 

@@ -2,9 +2,8 @@
 
 body {
     font-family: 'Rubik', sans-serif;
-    background-image: url("./assets/background.jpg");
-
-
+    /* background-image: url("./assets/background.jpg"); */
+    background-color: rgb(24, 24, 24);
     height: 100vh;
     /* background: linear-gradient(90deg, pink, #2e7a6373); */
 
@@ -49,7 +48,7 @@ body {
 .slider-thumb::before {
     position: absolute;
     content: "";
-    left: 0%;
+    left: 43%;
     top: 17%;
     width: 55%;
     height: 630px;

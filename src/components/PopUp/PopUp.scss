@@ -1,0 +1,96 @@
+.popup-wrapper {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 192, 203, 0.61);
+    top: 93%;
+    left: 95%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.911);
+    transition: all ease 0.5s;
+    border: none;
+
+    img {
+        width: 30px;
+        filter: drop-shadow(3px 3px 1px #0000006c);
+        transition: width ease 0.5s;
+    }
+
+    z-index: 999;
+
+}
+
+.popup-wrapper:hover {
+    width: 65px;
+    height: 65px;
+    top: 92%;
+    left: 94%;
+    transition: all ease 0.5s;
+    background-color: rgb(255, 192, 203);
+
+    img {
+        width: 40px;
+        transition: width ease 0.5s;
+    }
+}
+
+.modal-container {
+    position: fixed;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.356);
+    display: none;
+}
+
+.show-modal {
+    display: flex;
+
+}
+
+.modal-wrapper {
+    opacity: 0%;
+}
+
+.in-modal {
+    width: 100%;
+    -webkit-animation: slide-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    transition: all ease 1s;
+    opacity: 100%;
+
+}
+
+
+
+@-webkit-keyframes slide-tl {
+    0% {
+        -webkit-transform: translateY(200px) translateX(200px);
+        transform: translateY(200px) translateX(200px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px) translateX(0px);
+        transform: translateY(0px) translateX(0px);
+    }
+}
+
+@keyframes slide-tl {
+    0% {
+        -webkit-transform: translateY(200px) translateX(200px);
+        transform: translateY(200px) translateX(200px);
+
+    }
+
+    100% {
+        -webkit-transform: translateY(0px) translateX(0px);
+        transform: translateY(0px) translateX(0px);
+    }
+}

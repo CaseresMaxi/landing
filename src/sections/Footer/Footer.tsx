@@ -1,7 +1,6 @@
 
-import "./Footer.scss"
 import carpiAbogado from "../../assets/carpi-abogado.png"
-import ContactMe from "../../components/ContactMe/ContactMe"
+import "./Footer.scss"
 
 const Footer = () => {
 
@@ -10,7 +9,7 @@ const Footer = () => {
         <>
             <div className="footer-section-wrapper">
                 <div>
-                    <ContactMe />
+                    {/* <ContactMe /> */}
                 </div>
                 <div className="reserved">
                     <h1>© 2024 Maximilaino F. Caseres Todos los derechos reservados</h1>

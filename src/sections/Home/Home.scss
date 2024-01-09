@@ -19,7 +19,7 @@
         }
 
         color: white;
-        font-size: 70px;
+        font-size: 50px;
         font-weight: 700;
         display: block;
         white-space: nowrap;
@@ -36,7 +36,7 @@
 
     h2 {
         color: white;
-        font-size: 30px;
+        font-size: 55px;
         font-weight: 500;
 
         span {
@@ -47,7 +47,7 @@
 
     h3 {
         color: white;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 400;
         margin-top: 8px;
 
@@ -62,12 +62,12 @@
 
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 }
 
 .content-container {
-    max-width: 80%;
+    max-width: 50%;
     padding: 80px;
 }
