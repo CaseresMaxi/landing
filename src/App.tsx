@@ -1,6 +1,7 @@
 
 import './App.scss'
 import Header from './components/Header/Header'
+import { ParticlesB } from './components/ParticlesB/ParticlesB'
 import PopUp from './components/PopUp/PopUp'
 import AboutMe from './sections/AboutMe/AboutMe'
 // import ContactMe from './sections/ContactMe/ContactMe'
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div className='slider-thumb'>
-      {/* <ParticlesB /> */}
+      <ParticlesB />
       <Header />
       <PopUp />
       <section><Home /></section>

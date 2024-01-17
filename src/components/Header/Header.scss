@@ -35,6 +35,14 @@
             padding: 8px;
             border-radius: 8px;
             text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            img {
+                height: 30px;
+            }
         }
     }
 }
