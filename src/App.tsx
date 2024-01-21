@@ -21,10 +21,10 @@ function App() {
       <Header />
       <PopUp />
       <section><Home /></section>
+      <section><Proyects/></section>
       {/* <section><ContactMe /></section> */}
       <section><AboutMe /></section>
       <section><XpSection /></section>
-      <section><Proyects /></section>
       {/* <section><Cv /></section> */}
       <section><Footer /></section>
 

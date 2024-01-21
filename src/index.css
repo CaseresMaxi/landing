@@ -48,7 +48,7 @@ body {
 .slider-thumb::before {
     position: absolute;
     content: "";
-    left: 43%;
+    left: 22.5%;
     top: 17%;
     width: 55%;
     height: 630px;
