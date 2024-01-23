@@ -34,6 +34,10 @@
         gap: 18px;
         justify-content: flex-end;
         margin-bottom: 24px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 16px;
 
         .tecnologis-xp {
             color: pink;
@@ -45,6 +49,8 @@
             align-items: center;
             border-radius: 8px;
             padding: 18px;
+
+
 
         }
 
@@ -66,13 +72,28 @@
         font-size: 35px;
 
         strong {
+            color: pink;
+        }
+
+        .Pickit {
             color: rgb(255, 102, 0);
         }
+
+        margin-right: 24px;
     }
 
     h2 {
         color: pink;
 
+    }
+
+
+}
+
+@media (max-width: 860px) {
+
+    .xp-section-container {
+        width: 90%;
     }
 
 

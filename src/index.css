@@ -98,3 +98,13 @@ body {
 section {
     position: relative;
 }
+
+@media (max-width: 860px) {
+    .slider-thumb::before {
+        left: 3%;
+        top: 27%;
+        width: 95%;
+        height: 430px;
+   
+    }
+}

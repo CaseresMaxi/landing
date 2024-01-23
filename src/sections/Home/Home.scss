@@ -22,13 +22,13 @@
         color: white;
         font-size: 50px;
         font-weight: 700;
-        display: block;
-        white-space: nowrap;
-        border-right: 4px solid pink;
-        width: 20ch;
-        animation: typing 3s steps(20),
-        blink .5s infinite step-end alternate;
-        overflow: hidden;
+        // display: block;
+        // white-space: nowrap;
+        // border-right: 4px solid pink;
+        // width: 20ch;
+        // animation: typing 3s steps(20),
+        // blink .5s infinite step-end alternate;
+        // overflow: hidden;
 
         span {
             color: pink;
@@ -73,4 +73,26 @@
     padding: 80px;
     z-index: 2;
 
+}
+
+@media (max-width: 860px) {
+    .home-section-wrapper {
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+    .content-container {
+        max-width: 70%;
+        padding: 10px;
+    
+    }
 }

@@ -6,6 +6,7 @@
     background-color: rgba(0, 0, 0, 0.116);
     border-radius: 10px;
     display: flex;
+    margin-bottom: 100px;
 
     box-shadow: unset;
     transition: box-shadow ease 0.2s;
@@ -117,7 +118,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
     position: relative;
 
 }
@@ -134,4 +134,29 @@
         color: pink;
         font-size: 20px;
     }
+}
+
+
+@media (max-width: 860px) {
+    .about-containre {
+        width: 90%;
+        flex-direction: column;
+
+        .about-content {
+            width: 100%;
+        }
+
+        .skills-cotnainer {
+            width: 100%;
+
+            .logos-container {
+                img {
+                    width: 60px;
+                }
+            }
+
+        }
+    }
+
+
 }

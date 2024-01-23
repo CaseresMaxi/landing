@@ -1,7 +1,6 @@
 import "./Header.scss"
 import cv from "../../assets/cv-icon.svg"
 import lk from "../../assets/linkedin-logo.svg"
-import logo from "../../assets/M-logo.png"
 
 const Header = () => {
 

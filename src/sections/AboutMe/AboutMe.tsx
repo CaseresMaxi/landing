@@ -77,9 +77,7 @@ const AboutMe = () => {
                             </img>
                         </div>
                         <div className="about-content-container">
-                            <p>Desde el inicio de mi viaje en el mundo del desarrollo, he trabajado en una variedad de proyectos que abarcan desde pequeñas aplicaciones empresariales hasta plataformas web complejas. Mi enfoque versátil me ha permitido abordar desafíos desde el front-end hasta el back-end, siempre con un ojo puesto en la experiencia del usuario y la optimización del rendimiento.</p>
-                            <p>Me destaco en la creación de interfaces intuitivas y atractivas utilizando las últimas tecnologías del lado del cliente. Mi habilidad para trabajar en entornos de desarrollo front-end, como <span>HTML</span>, <span>CSS</span> y <span>JavaScript</span>, me permite transformar ideas creativas en experiencias visuales impactantes.</p>
-                            <p>En el lado del servidor, he trabajado con tecnologías como <span>Node.js</span> y <span>Express</span> para construir APIs eficientes y escalables. Además, tengo experiencia en el diseño y la implementación de bases de datos, utilizando tecnologías como <span>MongoDB</span> y <span>MySQL</span>, para garantizar un almacenamiento de datos sólido y bien estructurado.</p>
+                            <p>Soy un Desarrollador Full Stack con experiencia destacada en proyectos de back office y desarrollo integral de aplicaciones web. En Virtual Dreams, me especialicé en front-end (<span>Node.js</span>) y luego amplié mis habilidades al back-end (<span>Node.js</span>) y desarrollo móvil (<span>Angular</span>, <span>Electron</span>). En Pickit, lideré el mantenimiento del back office y el desarrollo front-end (<span>React</span>), destacándome en el lanzamiento exitoso de un proyecto regional para entregas a domicilio. Mi liderazgo incluyó la creación de arquitecturas innovadoras y la definición de estándares de calidad para futuros proyectos. Estoy emocionado por aportar mi experiencia a nuevos desafíos.</p>
                         </div>
 
                     </div>

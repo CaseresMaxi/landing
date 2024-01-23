@@ -75,15 +75,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // height: 100vh;
-    min-height: 80vh;
 
+    h1 {
+        margin-bottom: 4px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-left: 8px;
+    }
 
 }
 
 .proyects-container {
     width: 70%;
-    height: max(60%, 550px);
+    // height: 100%;
+    margin-bottom: 100px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(128, 128, 128, 0.151);
     background-color: rgba(0, 0, 0, 0.116);
@@ -128,11 +135,20 @@
         font-size: 40px;
     }
 
+    h2 {
+        color: white;
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+
+
 }
 
 .proyect-wrapper {
     padding: 0 48px 48px 48px;
     display: flex;
+    gap: 12px;
 
     h1 {
         color: pink;
@@ -163,6 +179,7 @@
         font-weight: 700;
 
         &:hover {
+
             // background-color: red;
             .proyect-img {
 
@@ -172,19 +189,63 @@
             }
         }
     }
-
-
-
-
-    // img:hover {
-    //     filter: blur(2px);
-
-    // }
-
-    // img::after {
-    //     width: 30px;
-    //     background-color: red;
-    //     height: 30px;
-    //     content: "awd";
-    // }
 }
+
+@media (max-width: 860px) {
+    .proyects-container {
+        width: 90%;
+    }
+
+    .proyects-title-container {
+
+        img {
+            height: 100px;
+        }
+
+        h1 {
+            color: pink;
+            font-size: 30px;
+        }
+
+        padding-bottom: 16px;
+        padding-top: 16px;
+
+    }
+
+    .proyect-wrapper {
+        padding: 0 24px 24px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h1 {
+            color: pink;
+            font-size: 36px;
+        }
+
+        .proyect-img {
+            height: 300px;
+            min-width: 50%;
+
+            z-index: 1;
+        }
+
+
+
+    }
+
+}
+
+
+
+// img:hover {
+//     filter: blur(2px);
+
+// }
+
+// img::after {
+//     width: 30px;
+//     background-color: red;
+//     height: 30px;
+//     content: "awd";
+// }

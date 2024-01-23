@@ -10,7 +10,7 @@ const Xp = (props: { xp: { title: string; date: string; name: string; desc: stri
                 <div className="xp-section-container">
                     {props.xp.map((e) => <div>
                         <div className="title-container">
-                            <h1>{e.title} - <strong>{e.name}</strong></h1>
+                            <h1>{e.title} - <strong className={`${e.name}`}>{e.name}</strong></h1>
                             <h2>{e.date}</h2>
                         </div>
                         <p>{e.desc}</p>
