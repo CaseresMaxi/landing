@@ -1,8 +1,9 @@
 
+import { ParallaxProvider } from 'react-scroll-parallax'
 import './App.scss'
 import Header from './components/Header/Header'
 import { ParticlesB } from './components/ParticlesB/ParticlesB'
-import PopUp from './components/PopUp/PopUp'
+// import PopUp from './components/PopUp/PopUp'
 import AboutMe from './sections/AboutMe/AboutMe'
 // import ContactMe from './sections/ContactMe/ContactMe'
 // import Cv from './sections/Cv/Cv'
@@ -13,22 +14,24 @@ import Proyects from './sections/Proyects/Proyects'
 import XpSection from './sections/XpSection/XpSection'
 
 function App() {
-
+  // const { ref } = useParallax<HTMLDivElement>({ onProgress: () => console.log("pepe") });
 
   return (
-    <div className='slider-thumb'>
-      <ParticlesB />
-      <Header />
-      <PopUp />
-      <section><Home /></section>
-      <section><Proyects/></section>
-      {/* <section><ContactMe /></section> */}
-      <section><AboutMe /></section>
-      <section><XpSection /></section>
-      {/* <section><Cv /></section> */}
-      <section><Footer /></section>
+    <ParallaxProvider>
+      <div className='slider-thumb' >
 
-    </div>
+        <ParticlesB />
+        <Header />
+        {/* <PopUp /> */}
+        <section><Home /></section>
+        <section><Proyects /></section>
+        {/* <section><ContactMe /></section> */}
+        <section><AboutMe /></section>
+        <section><XpSection /></section>
+        {/* <section><Cv /></section> */}
+        <section><Footer /></section>
+      </div>
+    </ParallaxProvider>
   )
 }
 

@@ -51,7 +51,7 @@ body {
     left: 22.5%;
     top: 17%;
     width: 55%;
-    height: 630px;
+    height: 70%;
     background: rgba(0, 0, 0, 0.116);
     border: 1.5px solid rgba(128, 128, 128, 0.151);
     backdrop-filter: blur(10px);
@@ -105,6 +105,16 @@ section {
         top: 27%;
         width: 95%;
         height: 430px;
-   
+
+    }
+}
+
+@media (max-height: 720px) {
+    .slider-thumb::before {
+        left: 15%;
+        top: 15%;
+        width: 65%;
+        height: 70%;
+
     }
 }

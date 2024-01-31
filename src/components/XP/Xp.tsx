@@ -1,4 +1,5 @@
 import "./Xp.scss"
+// import { Parallax } from "react-scroll-parallax"
 
 
 const Xp = (props: { xp: { title: string; date: string; name: string; desc: string; tecs: string[] }[] }) => {
@@ -6,7 +7,7 @@ const Xp = (props: { xp: { title: string; date: string; name: string; desc: stri
 
     return (
         <>
-            <div className="xp-section-wrapper">
+            <div className="xp-section-wrapper" data-testid="xp-id">
                 <div className="xp-section-container">
                     {props.xp.map((e) => <div>
                         <div className="title-container">

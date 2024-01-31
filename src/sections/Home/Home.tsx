@@ -1,13 +1,15 @@
 
 
+// import { Parallax } from "react-scroll-parallax"
 import "./Home.scss"
 
 const Home = () => {
 
 
+
   return (
     <>
-      <div className="home-section-wrapper">
+      <div className="home-section-wrapper" >
         {/* <img src={capi}></img> */}
         <div className="content-container">
           <h1>
