@@ -1,5 +1,5 @@
 import {
-    type Container,
+    // type Container,
     type ISourceOptions,
 } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -28,7 +28,8 @@ export const ParticlesB = () => {
         });
     }, []);
 
-    const particlesLoaded = async (container?: Container): Promise<void> => {
+    // const particlesLoaded = async (container?: Container): Promise<void> => {
+    const particlesLoaded = async (): Promise<void> => {
         // console.log(container);
     };
 
