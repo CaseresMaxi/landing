@@ -11,8 +11,8 @@ const Xp = (props: { xp: { title: string; date: string; name: string; desc: stri
                     {props.xp.map((e) => <div>
                         <div className="title-container">
                             <div style={{ display: "flex", alignItems: "center" }}>
-                                <h1>{e.title} - <strong className={`${e.name}`}>{e.name}</strong></h1>
-                                {e.link && <a href={e.link} target="_blank"><img src={LinkIcon} alt="" className="link-icon" /></a>}
+                                <h1>{e.title} - <strong className={`${e.name}`}>{e.name}</strong> {e.link && <a href={e.link} target="_blank"><img src={LinkIcon} alt="" className="link-icon" /></a>}</h1>
+
                             </div>
                             <h2>{e.date}</h2>
                         </div>
